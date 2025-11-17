@@ -3,29 +3,91 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ma première page</title>
+  <title>Cabinet Physiothérapie Petit-Lancy - Votre bien-être</title>
   <!-- Lier un fichier CSS : <link rel="stylesheet" href="styles.css"> -->
 </head>
 <body>
   <header>
-<nav aria-label="Navigation principale">
-     <ul>
-      <li><a href="accueil.html">Accueil</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="equipe.html">Équipe</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="apropos.html">A propos de moi</a></li>
-
-    </ul>
-  </nav> 
-</header>
+    <div class="logo">
+      <h1>Physio Santé Genève</h1>
+      <p>Cabinet de Physiothérapie à Petit-Lancy</p>
+    </div>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="equipe.html">Équipe</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="apropos.html">À Propos</a></li>
+      </ul>
+    </nav> 
+  </header>
 
   <main>
-    <p>Ceci est une page HTML de départ.</p>
+    <!-- Section 1: Héro (Accroche principale et Contact) -->
+    <section id="hero" style="background-color: #f0f8ff; padding: 50px 20px; text-align: center;">
+      <h2>Retrouvez le mouvement, vivez sans douleur.</h2>
+      <p>Notre équipe d'experts à Petit-Lancy vous offre des soins personnalisés en physiothérapie générale et spécialisée.</p>
+      
+      <!-- REMPLACEMENT DU CTA "Prendre RDV" par un appel téléphonique -->
+      <div style="margin-top: 25px; border: 2px solid #007bff; padding: 15px; display: inline-block; border-radius: 8px;">
+          <p style="margin: 0; font-size: 1.1em; font-weight: bold;">
+              Pour une prise en charge rapide, contactez-nous directement :
+          </p>
+          <a href="tel:+4122XXXXXX" style="font-size: 1.5em; color: #007bff; text-decoration: none; display: block; margin-top: 10px;">
+              📞 +41 22 XXX XX XX
+          </a>
+      </div>
+    </section>
+    
+    <!-- Section 2: Brève Présentation des Services -->
+    <section id="services-preview" style="padding: 40px 20px;">
+      <h3>Nos Domaines d'Expertise</h3>
+      <div class="services-list" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+        
+        <!-- Service 1: Physiothérapie Générale -->
+        <article class="service-item" style="width: 300px; margin: 15px; border: 1px solid #ddd; padding: 15px; border-radius: 8px;">
+          <h4>Physiothérapie Générale</h4>
+          <p>Traitement des douleurs articulaires et musculaires aiguës ou chroniques. Rééducation post-opératoire et préventive.</p>
+          <p><a href="services.html#general">En savoir plus &gt;</a></p>
+        </article>
+        
+        <!-- Service 2: Thérapie Manuelle -->
+        <article class="service-item" style="width: 300px; margin: 15px; border: 1px solid #ddd; padding: 15px; border-radius: 8px;">
+          <h4>Physiothérapie du Sport</h4>
+          <p>Prise en charge des blessures sportives, récupération rapide et conseils pour la performance athlétique.</p>
+          <p><a href="services.html#sport">En savoir plus &gt;</a></p>
+        </article>
+        
+        <!-- Service 3: Rééducation Spécialisée -->
+        <article class="service-item" style="width: 300px; margin: 15px; border: 1px solid #ddd; padding: 15px; border-radius: 8px;">
+          <h4>Rééducation Spécialisée</h4>
+          <p>Expertise en rééducation neurologique, vestibulaire ou périnéale, pour des besoins spécifiques.</p>
+          <p><a href="services.html#specialite">En savoir plus &gt;</a></p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Section 3: Localisation et Contact Rapide -->
+    <section id="location-cta" style="background-color: #eee; padding: 30px 20px; text-align: center;">
+        <h3>Cabinet facilement accessible à Petit-Lancy</h3>
+        <p>Nous acceptons les ordonnances médicales. Retrouvez tous les détails pratiques sur la page Contact.</p>
+        <p>Adresse : Rue du Petit-Lancy 12, 1213 Petit-Lancy, Genève.</p>
+        <!-- Le bouton redirige simplement vers la page Contact pour voir l'info -->
+        <a href="contact.html" style="display: inline-block; padding: 8px 20px; background-color: #333; color: white; text-decoration: none; border-radius: 5px; margin-top: 10px;">
+            Voir les Horaires et le Plan d'Accès
+        </a>
+    </section>
+
   </main>
 
-  <footer>
-    <p>&copy; 2025 — Mon site</p>
+  <footer style="padding: 20px; background-color: #333; color: white; text-align: center;">
+    <p>&copy; 2025 — Physio Santé Genève | Petit-Lancy</p>
+    <nav aria-label="Liens annexes">
+        <a href="apropos.html" style="color: white; margin: 0 10px;">Mentions Légales</a>
+        <a href="contact.html" style="color: white; margin: 0 10px;">Plan du Site</a>
+    </nav>
   </footer>
 
   <!-- Ajouter des scripts si besoin : <script src="app.js"></script> -->
