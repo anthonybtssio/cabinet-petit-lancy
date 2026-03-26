@@ -3,17 +3,66 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Pauline Liongo - Physiothérapeute à Petit-Lancy</title>
+    
+    <!-- SEO Primaire -->
+    <title>Pauline Liongo | Physiothérapeute à Petit-Lancy, Genève</title>
+    <meta name="description" content="Pauline Liongo, physiothérapeute diplômée à Petit-Lancy. Spécialisée en rééducation maxillo-faciale, périnéale (méthode GUILLARME) et neurologie (BOBATH, Parkinson)." />
+    <meta name="keywords" content="physiothérapeute, Petit-Lancy, Genève, rééducation maxillo-faciale, périnée, méthode GUILLARME, Parkinson, BOBATH, orthopédie, Pauline Liongo" />
+    <link rel="canonical" href="https://votre-site.ch/index.html" />
+
+    <!-- Open Graph (Réseaux Sociaux) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pauline Liongo - Physiothérapeute à Petit-Lancy" />
+    <meta property="og:description" content="Rééducation spécialisée (Maxillo-faciale, Périnéale, Neurologie) avec une approche humaine et bienveillante." />
+    <meta property="og:url" content="https://votre-site.ch/index.html" />
+    <meta property="og:site_name" content="Cabinet de Physiothérapie Pauline Liongo" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+
     <link rel="stylesheet" href="styles.css">
+
+    <!-- Données Structurées (Google) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Physician",
+      "name": "Pauline Liongo",
+      "image": "https://votre-site.ch/logo.png",
+      "description": "Physiothérapeute diplômée spécialisée en maxillo-faciale et rééducation périnéale.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rue du Petit-Lancy 12",
+        "addressLocality": "Petit-Lancy",
+        "postalCode": "1213",
+        "addressCountry": "CH"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 46.1912,
+        "longitude": 6.1132
+      },
+      "url": "https://votre-site.ch",
+      "telephone": "+4122XXXXXX",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00"
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
     <header>
         <div class="nav-container">
-            <a href="index.html" class="logo">Pauline Liongo</a>
+            <a href="index.html" class="logo" aria-label="Accueil Pauline Liongo">Pauline Liongo</a>
             <nav aria-label="Navigation principale">
                 <ul>
                     <li><a href="index.html" class="active">Accueil</a></li>
-                    <li><a href="services.html">Services</a></li>
+                    <li><a href="services.html">Expertises</a></li>
                     <li><a href="equipe.html">Profil</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="contact.html" class="nav-cta">Prendre RDV</a></li>
@@ -26,86 +75,96 @@
         <section class="hero">
             <p class="subtitle">Physiothérapeute diplômée à Petit-Lancy</p>
             <h1>Pauline Liongo</h1>
-            <h2>Retrouvez le mouvement, vivez sans douleur.</h2>
-            <p>Une approche personnalisée et bienveillante pour votre rééducation à Genève.</p>
+            <h2>"Respect, écoute et bienveillance au cœur de votre rééducation."</h2>
             
-            <div class="cta-box">
-                <p><strong>Besoin d'une prise en charge rapide ?</strong></p>
-                <a href="tel:+4122XXXXXX" class="cta-button">Appeler le cabinet</a>
+            <div class="cta-box reveal">
+                <p><strong>Besoin d'un accompagnement personnalisé ?</strong></p>
+                <a href="tel:+4122XXXXXX" class="cta-button" aria-label="Appeler pour un rendez-vous">Prendre rendez-vous par téléphone</a>
             </div>
         </section>
 
-        <section id="philosophy" class="philosophy-section">
+        <section id="philosophy" class="philosophy-section reveal">
             <div class="philosophy-title">
-                <h3>Ma Philosophie</h3>
+                <h3>Mon Approche Thérapeutique</h3>
             </div>
             <div class="philosophy-content">
-                <p>Je propose une prise en charge thérapeutique globale individualisée et fondée sur des techniques reconnues. Chaque séance est guidée par l'empathie, le professionnalisme et le respect du rythme du patient.</p>
-                <p>Mon objectif est de vous rendre acteur de votre propre guérison grâce à des conseils adaptés et un suivi rigoureux.</p>
+                <p>Je propose une prise en charge thérapeutique globale individualisée et fondée sur des techniques reconnues.</p>
+                <p>Chaque séance est guidée par l'empathie, le professionnalisme et le respect du rythme du patient, dans un climat de confiance et de sécurité.</p>
             </div>
         </section>
 
         <section id="services-preview">
-            <div style="text-align: center; margin-bottom: 3rem;">
-                <h3>Domaines d'Expertise</h3>
-                <p>Des soins spécialisés pour répondre à vos besoins spécifiques.</p>
+            <div style="text-align: center; margin-bottom: 4rem;" class="reveal">
+                <h3>Expertises de Rééducation</h3>
+                <p style="color: var(--text-light);">Une gamme de soins spécialisés à Genève.</p>
             </div>
             <div class="services-grid">
-                <article class="service-card">
-                    <div class="icon">🦷</div>
+                <article class="service-card reveal">
+                    <span class="icon" role="img" aria-label="Icône mâchoire">🦷</span>
                     <h4>Rééducation Maxillo-faciale</h4>
-                    <p>Prise en charge spécialisée des troubles de l'articulation temporo-mandibulaire (ATM) et de la face.</p>
+                    <p>Traitement spécialisé des troubles de la mâchoire et de la face.</p>
                 </article>
-                <article class="service-card">
-                    <div class="icon">🌸</div>
+                <article class="service-card reveal">
+                    <span class="icon" role="img" aria-label="Icône fleur">🌸</span>
                     <h4>Rééducation Périnéale</h4>
-                    <p>Utilisation de la méthode GUILLARME pour une approche efficace, globale et respectueuse.</p>
+                    <p>Méthode GUILLARME pour une approche physiologique du périnée.</p>
                 </article>
-                <article class="service-card">
-                    <div class="icon">🧠</div>
+                <article class="service-card reveal">
+                    <span class="icon" role="img" aria-label="Icône cerveau">🧠</span>
                     <h4>Neurologie</h4>
-                    <p>Accompagnement des patients parkinsoniens et méthode BOBATH pour adultes hémiplégiques ou paraplégiques.</p>
+                    <p>Accompagnement Parkinson et méthode BOBATH pour adultes.</p>
                 </article>
             </div>
-            <div style="text-align: center; margin-top: 4rem;">
-                <a href="services.html" class="cta-button" style="background-color: var(--secondary-color);">Explorer tous nos soins</a>
+            <div style="text-align: center; margin-top: 4rem;" class="reveal">
+                <a href="services.html" class="cta-button" style="background-color: transparent; color: var(--primary); border: 1.5px solid var(--primary); box-shadow: none;">Voir toutes les expertises</a>
             </div>
         </section>
 
-        <section id="location" style="text-align: center;">
-            <h3>Le Cabinet à Petit-Lancy</h3>
-            <p>Situé au cœur de Petit-Lancy, notre espace est conçu pour votre confort et votre bien-être.</p>
-            <p><strong>Adresse :</strong> Rue du Petit-Lancy 12, 1213 Petit-Lancy, Genève.</p>
-            <p>Accès facile via les transports publics (Tram 14, Bus 2, 19, 21).</p>
+        <section id="location" style="text-align: center;" class="reveal">
+            <h3>Accès au Cabinet</h3>
+            <p style="color: var(--text-light); margin-bottom: 2rem;">Le cabinet vous accueille à Petit-Lancy sur rendez-vous.</p>
+            <div style="background: var(--white); padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-md); display: inline-block; max-width: 100%;">
+                <p><strong>Adresse :</strong> Rue du Petit-Lancy 12, 1213 Petit-Lancy, Genève.</p>
+                <p>Prise en charge via ordonnance médicale (LAMal / LAA).</p>
+            </div>
         </section>
     </main>
 
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <h4>Pauline Liongo</h4>
+                <h4>Cabinet</h4>
+                <p>Pauline Liongo</p>
                 <p>Physiothérapeute diplômée</p>
-                <p>Spécialisée en Maxillo-faciale, Périnéologie et Neurologie.</p>
             </div>
             <div class="footer-section">
-                <h4>Contact</h4>
-                <p>📍 Rue du Petit-Lancy 12<br>1213 Petit-Lancy</p>
-                <p>📞 <a href="tel:+4122XXXXXX">+41 22 XXX XX XX</a></p>
+                <h4>Contact Direct</h4>
+                <p>📍 Rue du Petit-Lancy 12, 1213</p>
+                <p>📞 <a href="tel:+4122XXXXXX" aria-label="Téléphone cabinet">+41 22 XXX XX XX</a></p>
             </div>
             <div class="footer-section">
-                <h4>Liens</h4>
-                <p><a href="services.html">Services</a></p>
-                <p><a href="equipe.html">À propos</a></p>
-                <p><a href="contact.html">Contact & Plan</a></p>
-            </div>
-            <div class="footer-section">
-                <h4>Horaires</h4>
-                <p>Lundi — Vendredi<br>Sur rendez-vous</p>
+                <h4>Informations</h4>
+                <p><a href="services.html">Expertises</a></p>
+                <p><a href="equipe.html">Profil</a></p>
+                <p><a href="contact.html">Plan & Contact</a></p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 — Pauline Liongo | Physiothérapeute Petit-Lancy</p>
+            <p>&copy; 2026 Pauline Liongo | Physiothérapeute Petit-Lancy | Genève</p>
         </div>
     </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.style.opacity = "1";
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => {
+            el.style.opacity = "0";
+            el.style.transition = "opacity 1s ease-out, transform 1s ease-out";
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
