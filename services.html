@@ -8,33 +8,41 @@
 </head>
 <body>
     <header>
-        <nav aria-label="Navigation principale">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="equipe.html">Pauline Liongo</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="apropos.html">À Propos</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Pauline Liongo</a>
+            <nav aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="equipe.html">Profil</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="nav-cta">Prendre RDV</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <h1>Mes Domaines d'Expertise</h1>
-        <p>Formée à des techniques spécialisées, je propose une large gamme de soins adaptés à chaque étape de votre vie.</p>
+        <div style="text-align: center; margin-bottom: 5rem;">
+            <h1>Nos Domaines d'Expertise</h1>
+            <p style="font-size: 1.2rem; max-width: 800px; margin: 0 auto;">Formée à des techniques spécialisées, je propose une large gamme de soins adaptés à chaque étape de votre vie.</p>
+        </div>
 
         <section class="services-grid">
             <article class="service-card">
+                <div class="icon">🦷</div>
                 <h3>Rééducation Maxillo-faciale</h3>
-                <p>Spécialisation dans les troubles de la mâchoire, du visage et des fonctions oro-faciales.</p>
+                <p>Spécialisation dans les troubles de la mâchoire (ATM), du visage et des fonctions oro-faciales (déglutition, ventilation).</p>
             </article>
 
             <article class="service-card">
+                <div class="icon">🌸</div>
                 <h3>Rééducation Périnéale</h3>
-                <p>Utilisation de la <strong>méthode GUILLARME</strong> pour une rééducation efficace du plancher pelvien.</p>
+                <p>Utilisation de la <strong>méthode GUILLARME</strong> pour une rééducation physiologique du plancher pelvien par le souffle.</p>
             </article>
 
             <article class="service-card">
+                <div class="icon">🧠</div>
                 <h3>Neurologie Spécialisée</h3>
                 <ul class="specialties-list">
                     <li>Prise en charge des patients parkinsoniens.</li>
@@ -43,38 +51,63 @@
             </article>
 
             <article class="service-card">
+                <div class="icon">🏃</div>
                 <h3>Orthopédie & Traumatologie</h3>
                 <p>Rééducation après une fracture, une entorse, une intervention chirurgicale ou une blessure sportive.</p>
             </article>
 
             <article class="service-card">
+                <div class="icon">🦴</div>
                 <h3>Rhumatologie</h3>
-                <p>Accompagnement des pathologies inflammatoires et dégénératives (arthrose, arthrite, etc.).</p>
+                <p>Accompagnement des pathologies inflammatoires et dégénératives (arthrose, arthrite, lombalgies, cervicalgies).</p>
             </article>
 
             <article class="service-card">
-                <h3>Physiothérapie Générale & Gériatrie</h3>
-                <p>Maintien de l'autonomie et traitement des douleurs chroniques ou aiguës chez l'adulte et la personne âgée.</p>
+                <div class="icon">👴</div>
+                <h3>Gériatrie</h3>
+                <p>Maintien de l'autonomie, prévention des chutes et traitement des douleurs chroniques chez la personne âgée.</p>
             </article>
             
             <article class="service-card">
-                <h3>Handicap Infantile</h3>
-                <p>Expérience spécifique dans la prise en charge des enfants en situation de handicap.</p>
+                <div class="icon">🧒</div>
+                <h3>Pédiatrie</h3>
+                <p>Expérience spécifique dans la prise en charge des enfants en situation de handicap et développement psychomoteur.</p>
             </article>
         </section>
 
-        <section class="cta-box" style="display: block; text-align: center;">
-            <p><strong>Prenez rendez-vous pour une évaluation complète.</strong></p>
-            <a href="contact.html" class="cta-button">Prendre Contact</a>
+        <section class="cta-box" style="display: block; text-align: center; margin-top: 6rem;">
+            <p><strong>Vous avez une ordonnance médicale ?</strong></p>
+            <p>Nous acceptons tous les patients assurés LAMal (assurance de base) ou LAA (accident).</p>
+            <a href="contact.html" class="cta-button">Réserver une séance</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 — Pauline Liongo | Physiothérapeute Petit-Lancy</p>
-        <nav aria-label="Liens annexes">
-            <a href="contact.html">Contact & Plan</a>
-            <a href="index.html">Retour Accueil</a>
-        </nav>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Pauline Liongo</h4>
+                <p>Physiothérapeute diplômée</p>
+                <p>Spécialisée en Maxillo-faciale, Périnéologie et Neurologie.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📍 Rue du Petit-Lancy 12<br>1213 Petit-Lancy</p>
+                <p>📞 <a href="tel:+4122XXXXXX">+41 22 XXX XX XX</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens</h4>
+                <p><a href="index.html">Accueil</a></p>
+                <p><a href="equipe.html">Profil</a></p>
+                <p><a href="contact.html">Contact & Plan</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Horaires</h4>
+                <p>Lundi — Vendredi<br>Sur rendez-vous</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 — Pauline Liongo | Physiothérapeute Petit-Lancy</p>
+        </div>
     </footer>
 </body>
 </html>

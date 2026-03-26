@@ -8,48 +8,96 @@
 </head>
 <body>
     <header>
-        <nav aria-label="Navigation principale">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="equipe.html">Pauline Liongo</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="apropos.html">À Propos</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Pauline Liongo</a>
+            <nav aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="equipe.html" class="active">Profil</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="nav-cta">Prendre RDV</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section class="philosophy-section">
-            <h1>Pauline Liongo</h1>
-            <p><strong>Physiothérapeute diplômée</strong></p>
-            <p>Mon parcours est dédié à l'accompagnement des patients vers un mieux-être physique, quel que soit leur âge ou leur pathologie. Mon expérience en physiothérapie générale, en gériatrie et en pédiatrie spécialisée me permet de proposer des soins sur-mesure.</p>
+            <div class="philosophy-title">
+                <h1>Pauline Liongo</h1>
+                <p><strong>Physiothérapeute diplômée</strong></p>
+            </div>
+            <div class="philosophy-content">
+                <p>Mon parcours est dédié à l'accompagnement des patients vers un mieux-être physique, quel que soit leur âge ou leur pathologie.</p>
+                <p>Mon expérience en physiothérapie générale, en gériatrie et en pédiatrie spécialisée me permet de proposer des soins sur-mesure, adaptés aux besoins uniques de chaque individu.</p>
+            </div>
         </section>
 
         <section>
-            <h3>Mes Formations & Certifications</h3>
-            <p>Je continue de me former régulièrement pour vous offrir les techniques les plus récentes et efficaces.</p>
-            <ul class="specialties-list">
-                <li><strong>Rééducation Maxillo-faciale</strong> : troubles oro-faciaux et de la mâchoire.</li>
-                <li><strong>Rééducation Périnéale</strong> : méthode GUILLARME.</li>
-                <li><strong>Neurologie</strong> : Méthode BOBATH pour adultes hémiplégiques et paraplégiques.</li>
-                <li><strong>Prise en charge Parkinson</strong> : spécialisation neurologique.</li>
-                <li><strong>Orthopédie, Traumatologie & Rhumatologie</strong> : soins post-traumatiques et maladies articulaires.</li>
-            </ul>
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h3>Mes Formations & Certifications</h3>
+                <p>Une expertise continuellement mise à jour pour garantir des soins de haute qualité.</p>
+            </div>
+            
+            <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+                <article class="service-card">
+                    <h4>Spécialisations</h4>
+                    <ul class="specialties-list">
+                        <li><strong>Rééducation Maxillo-faciale</strong> : troubles oro-faciaux et de l'ATM.</li>
+                        <li><strong>Rééducation Périnéale</strong> : méthode GUILLARME.</li>
+                        <li><strong>Neurologie</strong> : Méthode BOBATH pour adultes.</li>
+                        <li><strong>Parkinson</strong> : prise en charge spécialisée neurologique.</li>
+                    </ul>
+                </article>
+                <article class="service-card">
+                    <h4>Domaines Généraux</h4>
+                    <ul class="specialties-list">
+                        <li><strong>Orthopédie & Traumatologie</strong> : rééducation post-traumatique.</li>
+                        <li><strong>Rhumatologie</strong> : traitement des douleurs chroniques.</li>
+                        <li><strong>Gériatrie</strong> : maintien de l'autonomie.</li>
+                        <li><strong>Pédiatrie</strong> : handicap infantile et développement.</li>
+                    </ul>
+                </article>
+            </div>
         </section>
 
-        <section class="philosophy-section">
-            <h3>Une approche humaine</h3>
-            <p>Au-delà de la technique, je place la relation humaine au cœur de ma pratique. Mon objectif est de créer un climat de <strong>confiance et de sécurité</strong> pour que chaque patient puisse progresser à son propre rythme.</p>
+        <section class="philosophy-section" style="background-color: var(--primary-color); color: var(--white);">
+            <div class="philosophy-title">
+                <h3 style="color: var(--white);">Une approche humaine</h3>
+            </div>
+            <div class="philosophy-content">
+                <p>Au-delà de la technique, je place la relation humaine au cœur de ma pratique. Mon objectif est de créer un climat de <strong>confiance et de sécurité</strong> pour que chaque patient puisse progresser à son propre rythme.</p>
+                <p>L'écoute active et la pédagogie sont des piliers essentiels de mon accompagnement.</p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 — Pauline Liongo | Physiothérapeute Petit-Lancy</p>
-        <nav aria-label="Liens annexes">
-            <a href="contact.html">Prendre RDV</a>
-            <a href="index.html">Retour Accueil</a>
-        </nav>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Pauline Liongo</h4>
+                <p>Physiothérapeute diplômée</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📍 Rue du Petit-Lancy 12<br>1213 Petit-Lancy</p>
+                <p>📞 <a href="tel:+4122XXXXXX">+41 22 XXX XX XX</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens</h4>
+                <p><a href="index.html">Accueil</a></p>
+                <p><a href="services.html">Services</a></p>
+                <p><a href="contact.html">Contact & Plan</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Horaires</h4>
+                <p>Lundi — Vendredi<br>Sur rendez-vous</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 — Pauline Liongo | Physiothérapeute Petit-Lancy</p>
+        </div>
     </footer>
 </body>
 </html>

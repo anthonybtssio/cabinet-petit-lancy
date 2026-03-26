@@ -8,69 +8,104 @@
 </head>
 <body>
     <header>
-        <nav aria-label="Navigation principale">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="equipe.html">Pauline Liongo</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="apropos.html">À Propos</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Pauline Liongo</a>
+            <nav aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="equipe.html">Profil</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="nav-cta">Prendre RDV</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section class="hero">
+            <p class="subtitle">Physiothérapeute diplômée à Petit-Lancy</p>
             <h1>Pauline Liongo</h1>
-            <p>Physiothérapeute diplômée à Petit-Lancy</p>
             <h2>Retrouvez le mouvement, vivez sans douleur.</h2>
-            <p>Je vous accompagne avec respect, écoute et bienveillance tout au long de votre parcours de rééducation.</p>
+            <p>Une approche personnalisée et bienveillante pour votre rééducation à Genève.</p>
             
             <div class="cta-box">
-                <p><strong>Pour une prise en charge rapide, contactez-moi directement :</strong></p>
-                <a href="tel:+4122XXXXXX" class="cta-button">📞 +41 22 XXX XX XX</a>
+                <p><strong>Besoin d'une prise en charge rapide ?</strong></p>
+                <a href="tel:+4122XXXXXX" class="cta-button">Appeler le cabinet</a>
             </div>
         </section>
 
         <section id="philosophy" class="philosophy-section">
-            <h3>Ma Philosophie</h3>
-            <p>Je propose une prise en charge thérapeutique globale individualisée et fondée sur des techniques reconnues. Chaque séance est guidée par l'empathie, le professionnelisme et le respect du rythme du patient.</p>
+            <div class="philosophy-title">
+                <h3>Ma Philosophie</h3>
+            </div>
+            <div class="philosophy-content">
+                <p>Je propose une prise en charge thérapeutique globale individualisée et fondée sur des techniques reconnues. Chaque séance est guidée par l'empathie, le professionnalisme et le respect du rythme du patient.</p>
+                <p>Mon objectif est de vous rendre acteur de votre propre guérison grâce à des conseils adaptés et un suivi rigoureux.</p>
+            </div>
         </section>
 
         <section id="services-preview">
-            <h3>Domaines d'Expertise</h3>
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h3>Domaines d'Expertise</h3>
+                <p>Des soins spécialisés pour répondre à vos besoins spécifiques.</p>
+            </div>
             <div class="services-grid">
                 <article class="service-card">
+                    <div class="icon">🦷</div>
                     <h4>Rééducation Maxillo-faciale</h4>
-                    <p>Prise en charge spécialisée des troubles de l'articulation temporo-mandibulaire et de la face.</p>
+                    <p>Prise en charge spécialisée des troubles de l'articulation temporo-mandibulaire (ATM) et de la face.</p>
                 </article>
                 <article class="service-card">
+                    <div class="icon">🌸</div>
                     <h4>Rééducation Périnéale</h4>
-                    <p>Méthode GUILLARME pour une approche efficace et respectueuse.</p>
+                    <p>Utilisation de la méthode GUILLARME pour une approche efficace, globale et respectueuse.</p>
                 </article>
                 <article class="service-card">
+                    <div class="icon">🧠</div>
                     <h4>Neurologie</h4>
-                    <p>Accompagnement des patients parkinsoniens et méthode BOBATH pour adultes hémiplégiques / paraplégiques.</p>
+                    <p>Accompagnement des patients parkinsoniens et méthode BOBATH pour adultes hémiplégiques ou paraplégiques.</p>
                 </article>
             </div>
-            <div style="text-align: center; margin-top: 2rem;">
-                <a href="services.html" class="cta-button" style="background-color: var(--accent-color);">Découvrir tous les services</a>
+            <div style="text-align: center; margin-top: 4rem;">
+                <a href="services.html" class="cta-button" style="background-color: var(--secondary-color);">Explorer tous nos soins</a>
             </div>
         </section>
 
-        <section id="location">
-            <h3>Cabinet à Petit-Lancy</h3>
-            <p>Adresse : Rue du Petit-Lancy 12, 1213 Petit-Lancy, Genève.</p>
-            <p>Cabinet facilement accessible, nous acceptons les ordonnances médicales.</p>
+        <section id="location" style="text-align: center;">
+            <h3>Le Cabinet à Petit-Lancy</h3>
+            <p>Situé au cœur de Petit-Lancy, notre espace est conçu pour votre confort et votre bien-être.</p>
+            <p><strong>Adresse :</strong> Rue du Petit-Lancy 12, 1213 Petit-Lancy, Genève.</p>
+            <p>Accès facile via les transports publics (Tram 14, Bus 2, 19, 21).</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 — Pauline Liongo | Physiothérapeute Petit-Lancy</p>
-        <nav aria-label="Liens annexes">
-            <a href="contact.html">Contact & Plan</a>
-            <a href="apropos.html">Mentions Légales</a>
-        </nav>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Pauline Liongo</h4>
+                <p>Physiothérapeute diplômée</p>
+                <p>Spécialisée en Maxillo-faciale, Périnéologie et Neurologie.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📍 Rue du Petit-Lancy 12<br>1213 Petit-Lancy</p>
+                <p>📞 <a href="tel:+4122XXXXXX">+41 22 XXX XX XX</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens</h4>
+                <p><a href="services.html">Services</a></p>
+                <p><a href="equipe.html">À propos</a></p>
+                <p><a href="contact.html">Contact & Plan</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Horaires</h4>
+                <p>Lundi — Vendredi<br>Sur rendez-vous</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 — Pauline Liongo | Physiothérapeute Petit-Lancy</p>
+        </div>
     </footer>
 </body>
 </html>

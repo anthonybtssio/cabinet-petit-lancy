@@ -3,48 +3,89 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>À Propos de Pauline Liongo - Physiothérapeute</title>
+    <title>À Propos - Pauline Liongo Physiothérapeute</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav aria-label="Navigation principale">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="equipe.html">Pauline Liongo</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="apropos.html">À Propos</a></li>
-            </ul>
-        </nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Pauline Liongo</a>
+            <nav aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="equipe.html">Profil</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="contact.html" class="nav-cta">Prendre RDV</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section class="philosophy-section">
-            <h1>À Propos de moi</h1>
-            <p><strong>Pauline Liongo - Physiothérapeute diplômée</strong></p>
-            <p>Je vous accompagne avec respect, écoute et bienveillance tout au long de votre parcours de rééducation.</p>
+            <div class="philosophy-title">
+                <h1>Ma Vision</h1>
+                <p><strong>Engagement & Bienveillance</strong></p>
+            </div>
+            <div class="philosophy-content">
+                <p>Je vous accompagne avec respect, écoute et bienveillance tout au long de votre parcours de rééducation.</p>
+                <p>Je propose une prise en charge thérapeutique globale individualisée et fondée sur des techniques reconnues, dans un climat de confiance et de sécurité.</p>
+            </div>
         </section>
 
         <section>
-            <h3>Ma Vision Thérapeutique</h3>
-            <p>Je propose une prise en charge thérapeutique globale individualisée et fondée sur des techniques reconnues.</p>
-            <p>Mon expérience en physiothérapie générale, en gériatrie ainsi que dans la prise en charge des enfants en situation de handicap me permet d'adapter chaque traitement aux besoins spécifiques de chaque patient, dans un climat de confiance et de sécurité.</p>
-            <p>Chaque séance est guidée par l'empathie, le professionnalisme et le respect du rythme du patient.</p>
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h3>Une Approche Globale</h3>
+            </div>
+            <div class="services-grid">
+                <article class="service-card">
+                    <h4>Empathie</h4>
+                    <p>Chaque séance est guidée par l'empathie et le respect du rythme du patient.</p>
+                </article>
+                <article class="service-card">
+                    <h4>Professionnalisme</h4>
+                    <p>Une expertise technique pointue au service de votre santé et de votre autonomie.</p>
+                </article>
+                <article class="service-card">
+                    <h4>Personnalisation</h4>
+                    <p>Des traitements adaptés aux besoins spécifiques de chaque individu, de l'enfant à la personne âgée.</p>
+                </article>
+            </div>
         </section>
 
-        <section class="philosophy-section" style="border-left-color: var(--accent-color);">
+        <section class="cta-box" style="display: block; text-align: center; margin-top: 6rem;">
             <h3>Mon Objectif</h3>
-            <p>Mon objectif est de soulager, rééduquer et accompagner durablement, tout en orientant vers d'autres professionnels de santé lorsque cela est nécessaire, afin d'assurer une prise en charge optimale et humaine.</p>
+            <p>Soulager, rééduquer et accompagner durablement, tout en assurant une prise en charge optimale et humaine.</p>
+            <a href="contact.html" class="cta-button">Me contacter</a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 — Pauline Liongo | Physiothérapeute Petit-Lancy</p>
-        <nav aria-label="Liens annexes">
-            <a href="contact.html">Contact & Plan</a>
-            <a href="index.html">Retour Accueil</a>
-        </nav>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Pauline Liongo</h4>
+                <p>Physiothérapeute diplômée</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>📍 Rue du Petit-Lancy 12<br>1213 Petit-Lancy</p>
+                <p>📞 <a href="tel:+4122XXXXXX">+41 22 XXX XX XX</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens</h4>
+                <p><a href="index.html">Accueil</a></p>
+                <p><a href="services.html">Services</a></p>
+                <p><a href="equipe.html">Profil</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Horaires</h4>
+                <p>Lundi — Vendredi<br>Sur rendez-vous</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 — Pauline Liongo | Physiothérapeute Petit-Lancy</p>
+        </div>
     </footer>
 </body>
 </html>
