@@ -3,29 +3,107 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Prendre Rendez-vous - Pauline Liongo</title>
+    <title>Prendre Rendez-vous | Pauline Liongo Physiothérapeute</title>
     <link rel="stylesheet" href="styles.css">
-    <meta http-equiv="refresh" content="5;url=contact.html">
+    <style>
+        .booking-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 900px;
+            margin: 4rem auto;
+            padding: 0 1rem;
+        }
+        .booking-card {
+            background: var(--white);
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .booking-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        .booking-card .icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        .booking-card h2 {
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        .booking-card p {
+            margin-bottom: 2rem;
+            color: var(--text-light);
+            flex-grow: 1;
+        }
+        .booking-card .cta-button {
+            width: 100%;
+        }
+        .onedoc-button {
+            background-color: #007bff; /* Couleur distinctive pour OneDoc si besoin, ou garder var(--primary) */
+            color: white;
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="nav-container">
             <a href="index.html" class="logo">Pauline Liongo</a>
+            <nav aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Expertises</a></li>
+                    <li><a href="equipe.html">Profil</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main style="text-align: center; padding: 8rem 2rem;">
-        <h1>Prendre Rendez-vous</h1>
-        <p style="font-size: 1.2rem;">Les rendez-vous se prennent <strong>uniquement par téléphone</strong> pour une meilleure réactivité.</p>
-        <p>Vous allez être redirigé vers la page de contact dans quelques secondes...</p>
-        <div style="margin-top: 3rem;">
-            <a href="contact.html" class="cta-button">Accéder à la page Contact</a>
+    <main style="padding: 6rem 1rem;">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+            <h1>Prendre Rendez-vous</h1>
+            <p style="font-size: 1.2rem; margin-top: 1rem; color: var(--text-light);">
+                Choisissez le mode de réservation qui vous convient le mieux.
+            </p>
+        </div>
+
+        <div style="max-width: 900px; margin: 3rem auto 0; text-align: center; background: #f9f9f9; padding: 1.5rem; border-radius: 15px; border: 1px solid #eee;">
+            <p><strong>Horaires de consultation :</strong> Lun, Mer : 12h30-18h30 | Jeu : 17h00-19h00 | Ven : 13h00-18h00</p>
+        </div>
+
+        <div class="booking-options">
+            <!-- Option OneDoc -->
+            <article class="booking-card">
+                <div class="icon">📅</div>
+                <h2>En ligne via OneDoc</h2>
+                <p>Réservez votre séance directement en ligne, 24h/24 et 7j/7, selon vos disponibilités.</p>
+                <a href="https://www.onedoc.ch/fr/physiotherapeute/geneve/pc02n/pauline-liongo" target="_blank" rel="noopener" class="cta-button">Réserver sur OneDoc</a>
+            </article>
+
+            <!-- Option Téléphone -->
+            <article class="booking-card">
+                <div class="icon">📞</div>
+                <h2>Par Téléphone</h2>
+                <p>Pour une question spécifique ou un premier contact, vous pouvez m'appeler directement.</p>
+                <a href="tel:+41765952676" class="cta-button">(041) 76 595 26 76</a>
+            </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <p><a href="contact.html" style="color: var(--primary); text-decoration: underline;">Voir le plan d'accès au cabinet</a></p>
         </div>
     </main>
 
     <footer>
         <div class="footer-bottom">
-            <p>&copy; 2026 — Pauline Liongo | Physiothérapeute Petit-Lancy</p>
+            <p>&copy; 2026 — Pauline Liongo | Physiothérapeute | Genève</p>
         </div>
     </footer>
 </body>
