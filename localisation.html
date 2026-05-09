@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Localisation | Pauline Liongo Physiothérapeute Genève</title>
+    <meta name="description" content="Trouvez le cabinet de physiothérapie de Pauline Liongo à Genève, Place De-Grenus 10, 1201 Genève." />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .map-wrapper {
+            width: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+            margin-bottom: 3rem;
+        }
+        .map-wrapper iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+            display: block;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        .info-card {
+            background: var(--white);
+            padding: 2.5rem 2rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-md);
+        }
+        .info-card .icon {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 1rem;
+        }
+        .info-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+        }
+        .info-card p, .info-card li {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.8;
+        }
+        .info-card ul {
+            list-style: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Pauline Liongo</a>
+            <nav aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Expertises</a></li>
+                    <li><a href="equipe.html">Profil</a></li>
+                    <li><a href="localisation.html" class="active">Localisation</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="prendreRdv.html" class="nav-cta">Prendre RDV</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div style="text-align: center; margin-bottom: 3rem; padding-top: 4rem;">
+            <h1>Nous trouver</h1>
+            <p style="font-size: 1.1rem; max-width: 600px; margin: 0 auto; color: var(--text-light);">Le cabinet est situé en plein cœur de Genève, facilement accessible en transports publics.</p>
+        </div>
+
+        <div class="map-wrapper">
+            <iframe
+                src="https://www.google.com/maps?q=Place+De-Grenus+10,+1201+Gen%C3%A8ve,+Suisse&output=embed&hl=fr"
+                allowfullscreen
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Localisation du cabinet de physiothérapie Pauline Liongo">
+            </iframe>
+        </div>
+
+        <div class="info-grid">
+            <div class="info-card">
+                <span class="icon">📍</span>
+                <h3>Adresse</h3>
+                <p>
+                    Place De-Grenus 10<br>
+                    1201 Genève<br>
+                    Suisse
+                </p>
+            </div>
+
+            <div class="info-card">
+                <span class="icon">🚌</span>
+                <h3>Transports publics</h3>
+                <ul>
+                    <li>Tram 13, 14 — arrêt Cornavin</li>
+                    <li>Bus 5, 10 — arrêt Gare Cornavin</li>
+                    <li>Train — Gare de Genève-Cornavin</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <span class="icon">🕐</span>
+                <h3>Horaires</h3>
+                <ul>
+                    <li><strong>Lundi :</strong> 12:30 – 18:30</li>
+                    <li><strong>Mercredi :</strong> 12:30 – 18:30</li>
+                    <li><strong>Jeudi :</strong> 17:00 – 19:00</li>
+                    <li><strong>Vendredi :</strong> 13:00 – 18:00</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <span class="icon">📞</span>
+                <h3>Contact direct</h3>
+                <p>
+                    <a href="tel:+41765952676" style="color: var(--primary); font-weight: 600;">(041) 76 595 26 76</a>
+                </p>
+            </div>
+        </div>
+
+        <section class="cta-box">
+            <h3>Prendre rendez-vous</h3>
+            <p style="margin-bottom: 2rem;">Besoin d'un traitement ? Contactez-nous pour convenir d'une consultation.</p>
+            <a href="prendreRdv.html" class="cta-button">Prendre rendez-vous</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Cabinet</h4>
+                <p>Pauline Liongo</p>
+                <p>Physiothérapeute diplômée</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Direct</h4>
+                <p>📍 Place De-Grenus 10, 1201 Genève</p>
+                <p>📞 <a href="tel:+41765952676">(041) 76 595 26 76</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens</h4>
+                <p><a href="index.html">Accueil</a></p>
+                <p><a href="services.html">Expertises</a></p>
+                <p><a href="equipe.html">Profil</a></p>
+                <p><a href="contact.html">Contact</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Horaires</h4>
+                <p>Lun, Mer : 12:30-18:30<br>Jeu : 17:00-19:00<br>Ven : 13:00-18:00</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Pauline Liongo | Physiothérapeute | Genève</p>
+        </div>
+    </footer>
+</body>
+</html>
