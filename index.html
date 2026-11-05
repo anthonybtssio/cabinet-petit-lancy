@@ -6,8 +6,8 @@
     
     <!-- SEO Primaire -->
     <title>Pauline Liongo | Physiothérapeute à Genève</title>
-    <meta name="description" content="Pauline Liongo, physiothérapeute diplômée. Spécialisée en rééducation maxillo-faciale, périnéale (méthode GUILLARME) et neurologie (BOBATH, Parkinson)." />
-    <meta name="keywords" content="physiothérapeute, Genève, rééducation maxillo-faciale, périnée, méthode GUILLARME, Parkinson, BOBATH, orthopédie, Pauline Liongo" />
+    <meta name="description" content="Pauline Liongo, physiothérapeute diplômée. Spécialisée en rééducation maxillo-faciale, périnéale (méthode GUILLARME) et neurologie." />
+    <meta name="keywords" content="physiothérapeute, Genève, rééducation maxillo-faciale, mâchoire, cervicalgie, périnée, méthode GUILLARME, Parkinson, orthopédie, Pauline Liongo" />
     <link rel="canonical" href="https://votre-site.ch/index.html" />
 
     <!-- Open Graph (Réseaux Sociaux) -->
@@ -47,7 +47,13 @@
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Wednesday"],
+          "dayOfWeek": "Monday",
+          "opens": "08:00",
+          "closes": "12:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Wednesday",
           "opens": "12:30",
           "closes": "18:30"
         },
@@ -85,22 +91,22 @@
     </header>
 
     <main>
-        <section class="hero" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); align-items: center; gap: 4rem; text-align: left; min-height: 80vh;">
+        <section class="hero hero--split">
             <div class="hero-content">
                 <h1>Pauline Liongo, Physiothérapeute Diplômée</h1>
-                <h2 style="font-style: italic; color: var(--text-light); font-weight: 400; font-size: 1.8rem; margin-bottom: 2rem;">"Respect, écoute et bienveillance au cœur de votre rééducation."</h2>
+                <h2 class="hero-quote">"Respect, écoute et bienveillance au cœur de votre rééducation."</h2>
                 
-                <div class="cta-box reveal" style="width: fit-content; text-align: left; padding: 0; box-shadow: none; background: transparent; margin-top: 0;">
+                <div class="hero-actions reveal">
                     <a href="prendreRdv.html" class="cta-button" aria-label="Prendre rendez-vous">Prendre rendez-vous</a>
                 </div>
             </div>
-            <div class="hero-image reveal" style="width: 100%; height: 500px; border-radius: 30px; overflow: hidden; box-shadow: var(--shadow-lg);">
-                <img src="photo/Capture d'écran 2026-04-18 144607.png" alt="Cabinet de Physiothérapie Pauline Liongo" style="width: 100%; height: 100%; object-fit: cover; background: linear-gradient(135deg, var(--primary), var(--secondary)); display: flex; align-items: center; justify-content: center; color: white; font-family: 'Playfair Display', serif;" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'width:100%; height:100%; background:linear-gradient(135deg, #003d5b, #30638e); display:flex; align-items:center; justify-content:center; color:white; text-align:center; padding:2rem;\'><h3>Cabinet de Physiothérapie<br>Pauline Liongo</h3></div>'">
+            <div class="hero-image reveal">
+                <img src="photo/Capture d'écran 2026-04-18 144607.png" alt="Cabinet de Physiothérapie Pauline Liongo" onerror="this.style.display='none'; this.parentNode.innerHTML='<div style=\'width:100%; height:100%; background:linear-gradient(135deg, #003d5b, #30638e); display:flex; align-items:center; justify-content:center; color:white; text-align:center; padding:2rem;\'><h3>Cabinet de Physiothérapie<br>Pauline Liongo</h3></div>'">
             </div>
         </section>
 
-        <section id="philosophy" class="philosophy-section reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: center;">
-            <div class="philosophy-image" style="border-radius: 20px; overflow: hidden; height: 400px; box-shadow: var(--shadow-md);">
+        <section id="philosophy" class="philosophy-section reveal">
+            <div class="philosophy-image" aria-hidden="true">
                 
             </div>
             <div class="philosophy-text">
@@ -115,15 +121,15 @@
         </section>
 
         <section id="services-preview">
-            <div style="text-align: center; margin-bottom: 4rem;" class="reveal">
+            <div class="section-head reveal">
                 <h3>Expertises de Rééducation</h3>
-                <p style="color: var(--text-light);">Une gamme de soins spécialisés à Genève.</p>
+                <p class="lede">Une gamme de soins spécialisés à Genève.</p>
             </div>
             <div class="services-grid">
                 <article class="service-card reveal">
-                    <span class="icon" role="img" aria-label="Icône mâchoire">🦷</span>
+                    <span class="icon" role="img" aria-label="Icône mâchoire"><svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><path d="M3.200 28.500C3.800 27.200 5 26.800 6.500 27.300C11 28.800 17 29 21.500 27.500C24.500 26.500 25.800 24.300 26.300 21L28.300 7.500C28.500 6.300 29.800 6.200 30.300 7.200L33 13.800C33.900 15.800 35.900 15.800 36.400 13.700L36.800 11.800C35.500 10.800 35.400 8.800 36.700 7.700C38.800 5.900 43.200 5.800 45 7.700C46.200 9 45.800 11 44.200 11.700L43.300 12.100C42.700 16.500 43.200 22 43.800 26C44.500 31 42.500 35 37.500 36.500C31 38.500 22 41.500 14 42.500C9.500 43 5.700 41.500 4.700 37.500C4.200 35.500 3.900 34 3.400 32.500C3 31 2.700 29.700 3.200 28.500Z" fill="#f6dfb4" stroke="#17233f" stroke-width="2" stroke-linejoin="round"/></svg></span>
                     <h4>Rééducation Maxillo-faciale</h4>
-                    <p>Traitement spécialisé des troubles de la mâchoire et de la face.</p>
+                    <p>Traitement spécialisé des troubles de la mâchoire et de la face, ainsi que des cervicalgies.</p>
                 </article>
                 <article class="service-card reveal">
                     <span class="icon" role="img" aria-label="Icône fleur">🌸</span>
@@ -133,18 +139,18 @@
                 <article class="service-card reveal">
                     <span class="icon" role="img" aria-label="Icône cerveau">🧠</span>
                     <h4>Neurologie</h4>
-                    <p>Accompagnement Parkinson et méthode BOBATH pour adultes.</p>
+                    <p>Accompagnement Parkinson pour adultes.</p>
                 </article>
             </div>
-            <div style="text-align: center; margin-top: 4rem;" class="reveal">
-                <a href="services.html" class="cta-button" style="background-color: transparent; color: var(--primary); border: 1.5px solid var(--primary); box-shadow: none;">Voir toutes les expertises</a>
+            <div class="cta-center reveal">
+                <a href="services.html" class="cta-button cta-button--ghost">Voir toutes les expertises</a>
             </div>
         </section>
 
-        <section id="location" style="text-align: center;" class="reveal">
+        <section id="location" class="location-section reveal">
             <h3>Accès au Cabinet</h3>
-            <p style="color: var(--text-light); margin-bottom: 2rem;">Le cabinet vous accueille à Genève sur rendez-vous.</p>
-            <div style="background: var(--white); padding: 2.5rem; border-radius: 20px; box-shadow: var(--shadow-md); display: inline-block; max-width: 100%;">
+            <p class="lede">Le cabinet vous accueille à Genève sur rendez-vous.</p>
+            <div class="address-card">
                 <p><strong>Adresse :</strong> Place De-Grenus 10, 1201 Genève.</p>
             </div>
         </section>
@@ -170,7 +176,7 @@
             </div>
             <div class="footer-section">
                 <h4>Horaires</h4>
-                <p>Lun, Mer : 12:30-18:30<br>Jeu : 17:00-19:00<br>Ven : 13:00-18:00</p>
+                <p>Lun : 08:00-12:00<br>Mer : 12:30-18:30<br>Jeu : 17:00-19:00<br>Ven : 13:00-18:00</p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -178,17 +184,6 @@
         </div>
     </footer>
 
-    <script>
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) entry.target.style.opacity = "1";
-            });
-        }, { threshold: 0.1 });
-        document.querySelectorAll('.reveal').forEach(el => {
-            el.style.opacity = "0";
-            el.style.transition = "opacity 1s ease-out, transform 1s ease-out";
-            observer.observe(el);
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
